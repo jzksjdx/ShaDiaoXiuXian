@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UnityGameFramework>
+  <ResourceCollection>
+    <Resources>
+      <Resource Name="Configs" FileSystem="GameData" LoadType="0" Packed="True" ResourceGroups="Base" />
+      <Resource Name="DataTables" FileSystem="GameData" LoadType="0" Packed="True" ResourceGroups="Base" />
+      <Resource Name="Entities" FileSystem="Resources" LoadType="0" Packed="True" />
+      <Resource Name="Fonts" FileSystem="UI" LoadType="0" Packed="True" ResourceGroups="Base" />
+      <Resource Name="Localization/Dictionaries" Variant="en-us" FileSystem="UI" LoadType="0" Packed="True" ResourceGroups="Base" />
+      <Resource Name="Localization/Dictionaries" Variant="ko-kr" FileSystem="UI" LoadType="0" Packed="True" ResourceGroups="Base" />
+      <Resource Name="Localization/Dictionaries" Variant="zh-cn" FileSystem="UI" LoadType="0" Packed="True" ResourceGroups="Base" />
+      <Resource Name="Localization/Dictionaries" Variant="zh-tw" FileSystem="UI" LoadType="0" Packed="True" ResourceGroups="Base" />
+      <Resource Name="Materials" FileSystem="Resources" LoadType="0" Packed="True" />
+      <Resource Name="Meshes" LoadType="0" Packed="True" />
+      <Resource Name="Music/About" FileSystem="Resources" LoadType="0" Packed="True" ResourceGroups="Music" />
+      <Resource Name="Music/Background" FileSystem="Resources" LoadType="0" Packed="True" ResourceGroups="Music" />
+      <Resource Name="Music/Menu" FileSystem="Resources" LoadType="0" Packed="True" ResourceGroups="Music" />
+      <Resource Name="Scenes" FileSystem="Resources" LoadType="0" Packed="True" />
+      <Resource Name="Sounds" FileSystem="Resources" LoadType="0" Packed="True" />
+      <Resource Name="Textures" FileSystem="Resources" LoadType="0" Packed="True" />
+      <Resource Name="UI/UIForms" FileSystem="UI" LoadType="0" Packed="True" />
+      <Resource Name="UI/UISounds" FileSystem="UI" LoadType="0" Packed="True" />
+      <Resource Name="UI/UISprites/Common" FileSystem="UI" LoadType="0" Packed="True" />
+      <Resource Name="UI/UISprites/Icons" FileSystem="UI" LoadType="0" Packed="True" />
+      <Resource Name="UI/UISprites/Logos" FileSystem="UI" LoadType="0" Packed="True" />
+    </Resources>
+    <Assets>
+      <Asset Guid="0179316b5fc7c2946a67c5877c02fc30" ResourceName="UI/UISprites/Common" />
+      <Asset Guid="041649ba3a4d3a842a13f878b21d6e89" ResourceName="Sounds" />
+      <Asset Guid="04d7dde7615d71b4db1a0c8d67a62e95" ResourceName="UI/UIForms" />
+      <Asset Guid="093f8873cfe371d41b854ed9fb6bff69" ResourceName="Music/About" />
+      <Asset Guid="09760eff098f8924299e294e6c828c9a" ResourceName="Music/Menu" />
+      <Asset Guid="09966b19e546cc94aa84d0743cb2a83d" ResourceName="UI/UIForms" />
+      <Asset Guid="0a65a68c01a76ea4b8b574827a6467aa" ResourceName="UI/UISprites/Common" />
+      <Asset Guid="1053b0070685be347ab58587156842dc" ResourceName="Localization/Dictionaries" ResourceVariant="zh-tw" />
+      <Asset Guid="14869ac0d4433f04db1704e39d03412e" ResourceName="Localization/Dictionaries" ResourceVariant="en-us" />
+      <Asset Guid="156d241f796508c4da4fc354a7fbf5a8" ResourceName="UI/UISprites/Common" />
+      <Asset Guid="180a50130a458ab4687b3579979b67e0" ResourceName="Sounds" />
+      <Asset Guid="199f8f544bc5d454a8c5fd9fd70e6005" ResourceName="DataTables" />
+      <Asset Guid="1e1f7e6d3c4f75649972076f8e3ed237" ResourceName="Sounds" />
+      <Asset Guid="236433a27ce40a7429b87d14d8fa3035" ResourceName="UI/UISprites/Common" />
+      <Asset Guid="239366f83979ffa48a45dac2f0f1e8cb" ResourceName="DataTables" />
+      <Asset Guid="24ca310f92a6796408f1db7647ec4e55" ResourceName="UI/UISprites/Common" />
+      <Asset Guid="29d47e9bc427864439b1cb165d00c23b" ResourceName="Textures" />
+      <Asset Guid="315e8ed2db27c254cb3366ff0793cd90" ResourceName="DataTables" />
+      <Asset Guid="352da872791696c48af3b21132e3e3c3" ResourceName="DataTables" />
+      <Asset Guid="372a8b1e52bedc64b9207b12d167afaa" ResourceName="DataTables" />
+      <Asset Guid="3aa539b1e46111d4299a83c73ebe762c" ResourceName="UI/UIForms" />
+      <Asset Guid="3bb14960aeb8e3a42bbb9b7235d0fe72" ResourceName="UI/UIForms" />
+      <Asset Guid="3be3fac3611f4584695662c4889f722d" ResourceName="UI/UISprites/Common" />
+      <Asset Guid="3f54fcfdac53aec42ae18a6a1c6d8cb1" ResourceName="UI/UISprites/Common" />
+      <Asset Guid="3f5598754eedf9645a3f967e900713a0" ResourceName="UI/UIForms" />
+      <Asset Guid="410b825dac3fbaf4b87dc91a2764c32f" ResourceName="Sounds" />
+      <Asset Guid="44c8db52241385c45bbb14a1718f17bf" ResourceName="Configs" />
+      <Asset Guid="4efd5b0dd49e18d419960d8dd60e2d77" ResourceName="Sounds" />
+      <Asset Guid="50167ed21e741ca47a4fb7c6ff4036f6" ResourceName="Sounds" />
+      <Asset Guid="56b8df63bbad60749a69e38bc687fadf" ResourceName="UI/UISprites/Common" />
+      <Asset Guid="5a4581471a46d564ebf5d6deb8ec6d28" ResourceName="UI/UIForms" />
+      <Asset Guid="5dcd89912e222bf4c87f76db4044bc5e" ResourceName="Localization/Dictionaries" ResourceVariant="ko-kr" />
+      <Asset Guid="5fb9235bb7d8ab74ab4e1f3e925ac226" ResourceName="Sounds" />
+      <Asset Guid="62af9e5c8f39cfa49af9e10ccf42f1da" ResourceName="UI/UISprites/Common" />
+      <Asset Guid="638ff8ae4a0d15047839cd265d3bc296" ResourceName="Music/Background" />
+      <Asset Guid="69907256eec356240951a718a5269ef9" ResourceName="Scenes" />
+      <Asset Guid="6cbc2c323b77f804fb958fa4eca33998" ResourceName="UI/UISprites/Common" />
+      <Asset Guid="6e664426d72c7134898b1f5c30cfa158" ResourceName="Sounds" />
+      <Asset Guid="74f34f93a27ece84795ad8195d9e560f" ResourceName="UI/UISprites/Common" />
+      <Asset Guid="77cbb7c5404c10242ab59953e0746314" ResourceName="Fonts" />
+      <Asset Guid="7ea04af5b93d89148ace1e6b188a798b" ResourceName="UI/UISprites/Common" />
+      <Asset Guid="7f5aee8da226edf4991598327cb32ce0" ResourceName="UI/UISprites/Logos" />
+      <Asset Guid="7fd11dc5d29076d469d414dec2818f11" ResourceName="Configs" />
+      <Asset Guid="871d4550d28d58249b900c9c9e1840c8" ResourceName="Entities" />
+      <Asset Guid="8b1acacd22538f34cb85287a0781ea5e" ResourceName="DataTables" />
+      <Asset Guid="8e114ded6a865324588170636872943c" ResourceName="DataTables" />
+      <Asset Guid="93c4923b7d2f345489cc88bd63a4d129" ResourceName="DataTables" />
+      <Asset Guid="97d117308cf86924289e81e7e71dd5dd" ResourceName="DataTables" />
+      <Asset Guid="9b433f0bb7fef6f4085c316a0d88c307" ResourceName="DataTables" />
+      <Asset Guid="9be2e1e45f4edd74c8764538ad306b78" ResourceName="Localization/Dictionaries" ResourceVariant="zh-cn" />
+      <Asset Guid="9c3faac13c8ced84a9f3018303b7bb98" ResourceName="DataTables" />
+      <Asset Guid="9f847ec5e66e03e4ead1d3c5f7b510e8" ResourceName="UI/UISprites/Common" />
+      <Asset Guid="a1ea1a15d39b7db45ac74a85d0f6e2cf" ResourceName="Meshes" />
+      <Asset Guid="a33e23ae848110243820cda82120b105" ResourceName="DataTables" />
+      <Asset Guid="a71f8bb1b1b2c51438e2bafc884cb02c" ResourceName="DataTables" />
+      <Asset Guid="a8c07bbe04fdaf04b80e27f651a8edd6" ResourceName="UI/UISprites/Common" />
+      <Asset Guid="ab45c3f613f388d43bbf43ec05eb92e2" ResourceName="UI/UISprites/Common" />
+      <Asset Guid="ab4774faf71b57a40a29a9e902403fe3" ResourceName="DataTables" />
+      <Asset Guid="af4b462585dc6ea4c801ab4ddcf69f53" ResourceName="Sounds" />
+      <Asset Guid="b031b4f2980561542a7f7ba41391edc3" ResourceName="Scenes" />
+      <Asset Guid="b2cebe04343227945bab3729ca9a3493" ResourceName="DataTables" />
+      <Asset Guid="ba8676627f740e1448de70b2cb77ddc8" ResourceName="Materials" />
+      <Asset Guid="bbfd75fe6fe00e1448fe988173ede7f9" ResourceName="UI/UIForms" />
+      <Asset Guid="c7d1e11dd37634b48a9dd4012b8e4306" ResourceName="UI/UISounds" />
+      <Asset Guid="cadd0764941c8b646ae79b51d0ea8285" ResourceName="UI/UISprites/Common" />
+      <Asset Guid="cb15b4ca16f4ddb4f8c362d58965ccc7" ResourceName="Sounds" />
+      <Asset Guid="cfe53cf384344bd47a8680f8c5f97a7b" ResourceName="DataTables" />
+      <Asset Guid="d2e2770bfbceed04cbf803382c9939ac" ResourceName="Scenes" />
+      <Asset Guid="db58965402f12ed47b4dad61a9e48c9d" ResourceName="UI/UISprites/Icons" />
+      <Asset Guid="e5ca26c53b6ab8a46b52817008d7c7fa" ResourceName="UI/UISprites/Icons" />
+      <Asset Guid="e6f6f76d9f0809f45b61208d9737d6f4" ResourceName="UI/UIForms" />
+      <Asset Guid="e81fb6047d256b247b262f97e1914cc2" ResourceName="Sounds" />
+      <Asset Guid="e82837c9099f69a48b48fc44eb8d119d" ResourceName="UI/UISprites/Common" />
+      <Asset Guid="e830964cdb85ff3429bca484c16bab44" ResourceName="UI/UISounds" />
+      <Asset Guid="e85864330b68dde498dcb6e8711815d3" ResourceName="UI/UISprites/Common" />
+      <Asset Guid="f139d2419d967b34bba7261d57084df0" ResourceName="Sounds" />
+      <Asset Guid="f23d7efca2ae0354da4639022a73b3ad" ResourceName="Sounds" />
+      <Asset Guid="f2f4df0b7211e4c42a5638273525d8ee" ResourceName="UI/UISprites/Common" />
+      <Asset Guid="f2f97a713beae744181ba934f9c4113a" ResourceName="DataTables" />
+      <Asset Guid="f438a72a91e1c3c4a9ced40888ffec96" ResourceName="UI/UISprites/Icons" />
+      <Asset Guid="fdb5edd099d06b045af609ba3172400a" ResourceName="DataTables" />
+    </Assets>
+  </ResourceCollection>
+</UnityGameFramework>

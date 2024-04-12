@@ -1,0 +1,45 @@
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/Assets/AssetStoreTools*
+/.vs/
+/.vscode/
+/Logs/
+/Packages
+
+
+.idea/
+*.csproj
+*.unityproj
+*.booproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.svd
+
+/Assets/StreamingAssets/*
+!/Assets/StreamingAssets/.gitkeep
+/ProjectSettings/ProjectVersion.txt
+/Packages/*
+/UnityPackageManager/*
+/AssetBundles/
+
+# Unity3D generated meta files
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Unity3D Generated File On Crash Reports
+sysinfo.txt
+
+# Builds
+*.apk
+*.unitypackage
+
+# Crashlytics generated file
+crashlytics-build.properties
