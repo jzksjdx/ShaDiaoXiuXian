@@ -6,8 +6,10 @@
 /Assets/AssetStoreTools*
 /.vs/
 /.vscode/
+/.vsconfig
 /Logs/
 /Packages
+[Uu]ser[Ss]ettings/
 
 
 .idea/

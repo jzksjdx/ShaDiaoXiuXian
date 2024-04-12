@@ -34,7 +34,7 @@ namespace GameMain
             "BattleUnit",
             "Bullet",
             "EntityUi",
-            "AI",
+            "Ai",
             "BulletImpactSound",
             "BulletImpactEffect",
         };
