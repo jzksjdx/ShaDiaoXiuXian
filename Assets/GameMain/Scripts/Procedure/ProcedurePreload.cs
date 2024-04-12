@@ -34,7 +34,7 @@ namespace GameMain
             "BattleUnit",
             "Bullet",
             "EntityUi",
-            "Ai",
+            "AI",
             "BulletImpactSound",
             "BulletImpactEffect",
         };
@@ -85,10 +85,11 @@ namespace GameMain
             {
                 if (!loadedFlag.Value)
                 {
+                    Log.Debug(loadedFlag.Key);
                     return;
                 }
             }
-
+            Log.Debug("Change to ProcedureChangeScene");
             procedureOwner.SetData<VarInt32>("NextSceneId", GameEntry.Config.GetInt("Scene.Menu"));
             ChangeState<ProcedureChangeScene>(procedureOwner);
         }
