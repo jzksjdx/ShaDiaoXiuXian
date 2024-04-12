@@ -6,13 +6,10 @@
 //------------------------------------------------------------
 
 using System;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace GameMain
 {
-    
-    [IncludeInSettings(true)]
     public class AIData
     {
         public string AssetName { get; set; }

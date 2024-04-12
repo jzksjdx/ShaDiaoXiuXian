@@ -9,7 +9,6 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using GameFramework.Entity;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
@@ -18,7 +17,6 @@ namespace GameMain
     /// <summary>
     /// AI 工具类。
     /// </summary>
-    [IncludeInSettings(true)]
     public static class AIUtility
     {
         private static Dictionary<CampPair, RelationType> s_CampPairToRelation = new Dictionary<CampPair, RelationType>();
@@ -150,7 +148,7 @@ namespace GameMain
     
             foreach (var entity in cachedEntities)
             {
-                if (entity == null || entity.IsUnityNull())
+                if (entity == null)
                 {
                     continue;
                 }

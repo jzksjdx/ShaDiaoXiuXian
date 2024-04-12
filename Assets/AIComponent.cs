@@ -5,7 +5,6 @@ using GameFramework;
 using GameFramework.DataTable;
 using GameFramework.ObjectPool;
 using GameFramework.Resource;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 using AssetUtility = GameMain.AssetUtility;
@@ -74,13 +73,13 @@ public class AIComponent : GameFrameworkComponent
        
 
         var entity = GameEntry.Entity.GetEntity(loadStateGraphInfo.EntityId);
-        if (entity != null && entity.Handle is GameObject go)
-        {
-            var stateMachine = go.AddComponent<StateMachine>();
-            //设置graph
-            stateMachine.nest.SwitchToMacro((StateGraphAsset)asset);
+        //if (entity != null && entity.Handle is GameObject go)
+        //{
+        //    var stateMachine = go.AddComponent<StateMachine>();
+        //    //设置graph
+        //    stateMachine.nest.SwitchToMacro((StateGraphAsset)asset);
             
-        }
+        //}
         
 
     }

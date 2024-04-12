@@ -1,10 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
-[IncludeInSettings(true)]
 public static class ComponentUtility 
 {
     public static T MyGetOrAddComponent<T>(this GameObject gameObject) where T:Component

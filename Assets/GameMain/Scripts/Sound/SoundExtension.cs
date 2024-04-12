@@ -10,13 +10,11 @@ using System.Collections.Generic;
 using GameFramework;
 using GameFramework.DataTable;
 using GameFramework.Sound;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
 namespace GameMain
 {
-    [IncludeInSettings(true)]
     public static class SoundExtension
     {
         private const float FadeVolumeDuration = 1f;

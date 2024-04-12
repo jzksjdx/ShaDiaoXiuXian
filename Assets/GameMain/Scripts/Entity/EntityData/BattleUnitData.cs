@@ -2,14 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using GameFramework.DataTable;
 using GameMain;
-using Unity.VisualScripting;
 using UnityEngine;
 
 
 
 
 [System.Serializable]
-[IncludeInSettings(true)]
 public class BattleUnitData : TargetableObjectData
 {
     
