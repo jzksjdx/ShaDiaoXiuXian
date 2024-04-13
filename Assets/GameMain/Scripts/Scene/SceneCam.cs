@@ -16,7 +16,7 @@ public class SceneCam : Entity
       base.OnInit(userData);
       cinemachine = GetComponentInChildren<CinemachineVirtualCamera>();
       cinemachineTargetGroup = GetComponentInChildren<CinemachineTargetGroup>();
-      cinemachine.LookAt = cinemachineTargetGroup.Transform;
+      //cinemachine.LookAt = cinemachineTargetGroup.Transform;
    }
 
    public void SetFollow(Transform target)

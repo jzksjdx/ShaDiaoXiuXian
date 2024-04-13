@@ -7,11 +7,12 @@
 /.vs/
 /.vscode/
 /.vsconfig
-/.DS_Store
+Assets/.DS_Store
+Assets/GameMain/.DS_Store
 /Logs/
 /Packages
-[Uu]ser[Ss]ettings/
-
+/[Uu]ser[Ss]ettings/
+*LocalPlugins*
 
 .idea/
 *.csproj

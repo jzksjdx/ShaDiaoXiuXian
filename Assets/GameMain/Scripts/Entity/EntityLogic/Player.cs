@@ -13,7 +13,7 @@ public class Player : BattleUnit
 
     protected override void OnShow(object userData)
     {
-        base.OnShow(userData);
+        Log.Debug("Player on show");
         playerData=userData as PlayerData;
 
         if (playerData == null)
@@ -21,7 +21,11 @@ public class Player : BattleUnit
             Log.Error("PlayerData is Invalid");
             return;
         }
+
         Name = Utility.Text.Format("Player ({0})", Id);
+        CachedTransform.SetLocalScaleX(2);
+        CachedTransform.SetLocalScaleY(2);
+        CachedTransform.SetLocalScaleZ(2);
     }
 
     protected override void OnUpdate(float elapseSeconds, float realElapseSeconds)
@@ -29,11 +33,11 @@ public class Player : BattleUnit
         base.OnUpdate(elapseSeconds, realElapseSeconds);
         
 
-        var horizontal = Input.GetAxis("Horizontal");
-        var vertical= Input.GetAxis("Vertical");
-        
-        transform.Rotate(Vector3.up,30*Time.deltaTime*horizontal *(vertical>=0?1:-1) );
-        transform.Translate(Vector3.forward * (2 * (Time.deltaTime * vertical)),Space.Self);
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical= Input.GetAxis("Vertical");
+
+        Vector3 moveDirection = new Vector3(horizontal, 0, vertical).normalized;
+        transform.Translate(10 * elapseSeconds * moveDirection);
         
         //攻击
         if (Input.GetMouseButtonDown(0))

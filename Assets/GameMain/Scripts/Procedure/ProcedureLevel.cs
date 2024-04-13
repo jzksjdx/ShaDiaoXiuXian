@@ -51,9 +51,6 @@ namespace GameMain
             
             //这里只是Add,没有启用，启用是在OnEnter中启用
             m_Games.Add(GameMode.Level1, new GameLevel1());
-          
-            
-            
         }
 
         protected override void OnDestroy(ProcedureOwner procedureOwner)

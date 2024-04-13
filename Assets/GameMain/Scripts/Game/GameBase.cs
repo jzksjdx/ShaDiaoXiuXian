@@ -172,12 +172,12 @@ namespace GameMain
         /// </summary>
         protected virtual void CheckGameOverOrWin()
         {
-            if (Player != null && (!Player.Available || Player.IsDead))
-            {
-                GameOver = true;
-                Log.Debug("GameOver!!");
+            //if (Player != null && (!Player.Available || Player.IsDead))
+            //{
+            //    GameOver = true;
+            //    Log.Debug("GameOver!!, available: " + Player.Available);
                 
-            }
+            //}
             
         }
         public void Update(float elapseSeconds, float realElapseSeconds)

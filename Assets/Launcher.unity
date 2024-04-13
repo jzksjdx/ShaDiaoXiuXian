@@ -489,6 +489,62 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Framework
       objectReference: {fileID: 0}
+    - target: {fileID: 1844984924396912985, guid: 362832bc2874d7c40bfffd39298fd230, type: 3}
+      propertyPath: m_AvailableProcedureTypeNames.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844984924396912985, guid: 362832bc2874d7c40bfffd39298fd230, type: 3}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[1]
+      value: GameMain.ProcedureLaunch
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844984924396912985, guid: 362832bc2874d7c40bfffd39298fd230, type: 3}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[2]
+      value: GameMain.ProcedureMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844984924396912985, guid: 362832bc2874d7c40bfffd39298fd230, type: 3}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[3]
+      value: GameMain.ProcedurePreload
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844984924396912985, guid: 362832bc2874d7c40bfffd39298fd230, type: 3}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[4]
+      value: GameMain.ProcedureSplash
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844984924396912985, guid: 362832bc2874d7c40bfffd39298fd230, type: 3}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[5]
+      value: ProcedureLevel1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844984924396912985, guid: 362832bc2874d7c40bfffd39298fd230, type: 3}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[6]
+      value: ProcedureLevel2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844984924396912985, guid: 362832bc2874d7c40bfffd39298fd230, type: 3}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[7]
+      value: ProcedureRetry
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844984924396912985, guid: 362832bc2874d7c40bfffd39298fd230, type: 3}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[8]
+      value: ProcedureRetry
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844984924396912985, guid: 362832bc2874d7c40bfffd39298fd230, type: 3}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[9]
+      value: ProcedureRetry
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844984924396912985, guid: 362832bc2874d7c40bfffd39298fd230, type: 3}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[10]
+      value: ProcedureRetry
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844984924396912985, guid: 362832bc2874d7c40bfffd39298fd230, type: 3}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[11]
+      value: ProcedureRetry
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844984924396912985, guid: 362832bc2874d7c40bfffd39298fd230, type: 3}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[12]
+      value: ProcedureRetry
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844984924396912985, guid: 362832bc2874d7c40bfffd39298fd230, type: 3}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[13]
+      value: ProcedureRetry
+      objectReference: {fileID: 0}
     - target: {fileID: 1844984924396921253, guid: 362832bc2874d7c40bfffd39298fd230, type: 3}
       propertyPath: m_SoundGroups.Array.data[1].m_AvoidBeingReplacedBySamePriority
       value: 0

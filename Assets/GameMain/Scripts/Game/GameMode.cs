@@ -12,7 +12,6 @@ namespace GameMain
     /// </summary>
     public enum GameMode : byte
     {
-       
         Level1=1,
         Level2=2,
         Level3=3,
