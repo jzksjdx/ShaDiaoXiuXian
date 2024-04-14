@@ -38,6 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Sky
+    uniqueID: 3219379585
+    locked: 0
+  - name: Cloud
+    uniqueID: 2226248665
+    locked: 0
+  - name: BackGround
+    uniqueID: 3111986511
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
