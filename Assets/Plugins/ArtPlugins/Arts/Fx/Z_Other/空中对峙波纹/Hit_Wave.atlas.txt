@@ -1,0 +1,17 @@
+Hit_Wave.png
+size:257,83
+filter:Linear,Linear
+guang
+bounds:84,3,78,78
+offsets:2,0,80,80
+guang2
+bounds:2,2,80,79
+offsets:0,0,80,80
+guang3
+bounds:164,5,24,24
+offsets:1,0,25,25
+guang4
+bounds:215,41,40,40
+guang5
+bounds:164,31,49,50
+offsets:1,0,50,50

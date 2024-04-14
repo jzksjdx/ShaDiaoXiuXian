@@ -1,0 +1,12 @@
+horse.png
+size:321,174
+filter:Linear,Linear
+002/01
+bounds:2,2,254,170
+offsets:2,9,256,179
+002/02
+bounds:258,35,58,20
+offsets:3,22,64,64
+002/03
+bounds:258,57,115,61
+rotate:90

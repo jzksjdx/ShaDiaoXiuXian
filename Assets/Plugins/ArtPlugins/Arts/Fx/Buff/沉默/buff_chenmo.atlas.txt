@@ -1,0 +1,7 @@
+buff_chenmo.png
+size:66,43
+filter:Linear,Linear
+_0001_chenmo1
+bounds:47,11,17,30
+_0002_chenmo2
+bounds:2,2,43,39

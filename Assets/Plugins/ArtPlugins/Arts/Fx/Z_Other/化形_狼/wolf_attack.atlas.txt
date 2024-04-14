@@ -1,0 +1,16 @@
+wolf_attack.png
+size:394,146
+filter:Linear,Linear
+fxsk101_0019
+bounds:231,55,125,89
+offsets:1,1,127,91
+fxsk102_0001
+bounds:2,2,227,142
+offsets:1,1,229,144
+fxsk102_0002
+bounds:231,11,42,87
+rotate:90
+fxsk102_0003
+bounds:358,57,34,87
+fxsk102_0004
+bounds:320,13,40,40

@@ -1,0 +1,14 @@
+buff_jinguang.png
+size:160,113
+filter:Linear,Linear
+ef/dd_4
+bounds:122,24,42,32
+offsets:4,4,50,50
+rotate:90
+ef/qb2
+bounds:2,2,118,109
+offsets:1,1,120,120
+ef/yun3 (2)
+bounds:122,68,43,36
+offsets:4,3,50,40
+rotate:90

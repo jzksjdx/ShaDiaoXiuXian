@@ -1,0 +1,18 @@
+Ground fissures.png
+size:199,317
+filter:Linear,Linear
+at_dilie
+bounds:2,259,191,56
+offsets:1,2,200,65
+diyuan_0025
+bounds:2,69,174,65
+offsets:11,2,200,72
+diyuan_0027
+bounds:2,2,187,65
+offsets:6,2,200,72
+diyuan_0028
+bounds:2,136,195,62
+offsets:3,2,200,72
+diyuan_0030
+bounds:2,200,195,57
+offsets:1,3,200,72

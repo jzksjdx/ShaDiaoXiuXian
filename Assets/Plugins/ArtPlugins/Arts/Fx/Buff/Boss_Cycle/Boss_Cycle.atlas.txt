@@ -1,0 +1,10 @@
+Boss_Cycle.png
+size:204,113
+filter:Linear,Linear
+1
+bounds:170,58,53,32
+offsets:0,1,54,34
+rotate:90
+2
+bounds:2,2,166,109
+offsets:28,23,224,152

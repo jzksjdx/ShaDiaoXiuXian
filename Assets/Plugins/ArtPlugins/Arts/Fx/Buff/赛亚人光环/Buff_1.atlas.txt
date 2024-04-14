@@ -1,0 +1,12 @@
+Buff_1.png
+size:684,241
+filter:Linear,Linear
+TX_xuqi_0001
+bounds:2,2,228,237
+offsets:10,21,250,280
+TX_xuqi_0002
+bounds:232,4,224,235
+offsets:14,23,250,280
+TX_xuqi_0003
+bounds:458,7,224,232
+offsets:14,26,250,280

@@ -1,0 +1,6 @@
+Wave.png
+size:89,89
+filter:Linear,Linear
+yuan_00000
+bounds:2,2,85,85
+offsets:8,4,100,96

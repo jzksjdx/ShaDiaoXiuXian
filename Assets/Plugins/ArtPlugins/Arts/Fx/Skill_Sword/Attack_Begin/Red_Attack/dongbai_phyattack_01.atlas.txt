@@ -1,0 +1,6 @@
+dongbai_phyattack_01.png
+size:165,204
+filter:Linear,Linear
+at_dgfx_00000
+bounds:2,2,161,200
+offsets:12,0,188,200

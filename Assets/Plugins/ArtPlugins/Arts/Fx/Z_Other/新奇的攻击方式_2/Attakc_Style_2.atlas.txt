@@ -1,0 +1,17 @@
+Attakc_Style_2.png
+size:225,288
+filter:Linear,Linear
+TX_gx_00001
+bounds:149,121,165,74
+offsets:0,2,165,76
+rotate:90
+TX_gy_00001
+bounds:127,46,71,73
+offsets:1,1,74,76
+TX_lz_00001
+bounds:2,126,160,145
+offsets:6,1,173,151
+rotate:90
+TX_sg01_00001
+bounds:2,2,123,122
+offsets:2,0,125,124
