@@ -16,7 +16,7 @@ public class BowWeaponAttack : RangeWeaponAttack
             var m_WeaponData = Weapon.m_WeaponData;
             for (int i = -4; i < 5; i++)
             {
-                GameEntry.Entity.ShowBullet(new BulletData(GameEntry.Entity.GenerateSerialId(), m_WeaponData.BulletId, m_WeaponData.OwnerId, m_WeaponData.OwnerCamp, m_WeaponData.Attack, m_WeaponData.BulletSpeed,5)
+                GameEntry.Entity.ShowBullet(new BulletData(GameEntry.Entity.GenerateSerialId(), m_WeaponData.BulletId, m_WeaponData.OwnerId, m_WeaponData.OwnerCamp, m_WeaponData.Id, m_WeaponData.BulletSpeed,5)
                 {
                     Position = shootPoint.TransformPoint(i*0.6f,0,0),
                     Rotation = shootPoint.rotation,

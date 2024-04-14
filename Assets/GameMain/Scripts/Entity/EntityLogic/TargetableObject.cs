@@ -38,7 +38,7 @@ namespace GameMain
             return new BattleData(m_TargetableObjectData.Camp, m_TargetableObjectData.HP,0);
         }
 
-        public virtual void ApplyDamage(BattleUnit attacker, int damageHP)
+        public virtual void ApplyDamage(BattleUnit attacker, float damageHP)
         {
             if(died)
                 return;

@@ -19,10 +19,10 @@ public class BattleUnitData : TargetableObjectData
     private List<ArmorData> m_ArmorDatas = new List<ArmorData>();
 
     [SerializeField]
-    private int m_MaxHP = 0;
+    private float m_MaxHealth = 0;
 
     [SerializeField]
-    private int m_Defense = 0;
+    private float m_Defense = 0;
 
     [SerializeField]
     private int m_DeadEffectId = 0;
@@ -77,24 +77,24 @@ public class BattleUnitData : TargetableObjectData
         m_DeadEffectId = drBattleUnit.DeadEffectId;
         m_DeadSoundId = drBattleUnit.DeadSoundId;
 
-        HP = m_MaxHP;
+        HP = m_MaxHealth;
     }
 
     /// <summary>
     /// 最大生命。
     /// </summary>
-    public override int MaxHP
+    public override float MaxHealth
     {
         get
         {
-            return m_MaxHP;
+            return m_MaxHealth;
         }
     }
 
     /// <summary>
     /// 防御。
     /// </summary>
-    public int Defense
+    public float Defense
     {
         get
         {
@@ -185,17 +185,17 @@ public class BattleUnitData : TargetableObjectData
 
     private void RefreshData()
     {
-        m_MaxHP = 0;
+        m_MaxHealth = 0;
         m_Defense = 0;
         for (int i = 0; i < m_ArmorDatas.Count; i++)
         {
-            m_MaxHP += m_ArmorDatas[i].MaxHP;
+            m_MaxHealth += m_ArmorDatas[i].MaxHP;
             m_Defense += m_ArmorDatas[i].Defense;
         }
 
-        if (HP > m_MaxHP)
+        if (HP > m_MaxHealth)
         {
-            HP = m_MaxHP;
+            HP = m_MaxHealth;
         }
     }
 }

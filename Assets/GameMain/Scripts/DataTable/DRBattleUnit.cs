@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2024-03-28 18:31:13.826
+// 生成时间：2024-04-14 01:06:12.122
 //------------------------------------------------------------
 
 using GameFramework;
@@ -37,7 +37,7 @@ namespace GameMain
         }
 
         /// <summary>
-        /// 获取右手武器。
+        /// 获取主武器。
         /// </summary>
         public int WeaponId0
         {
@@ -46,7 +46,7 @@ namespace GameMain
         }
 
         /// <summary>
-        /// 获取左手武器。
+        /// 获取副武器。
         /// </summary>
         public int WeaponId1
         {

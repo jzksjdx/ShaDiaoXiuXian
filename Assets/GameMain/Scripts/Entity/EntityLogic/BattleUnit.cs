@@ -29,12 +29,12 @@ public class BattleUnit : TargetableObject
         return m_Weapons[index];
     }
 
-    public void OnBeforeDamageVictim(TargetableObject victim, int damageHp)
+    public void OnBeforeDamageVictim(TargetableObject victim, float damageHp)
     {
         //暂不实现，接入技能，Buff,天赋等系统
     }
     
-    public void OnAfterDamageVictim(TargetableObject victim, int damageHp)
+    public void OnAfterDamageVictim(TargetableObject victim, float damageHp)
     {
         //暂不实现
     }

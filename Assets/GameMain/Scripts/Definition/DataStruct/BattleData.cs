@@ -13,11 +13,11 @@ namespace GameMain
     public struct BattleData
     {
         private readonly CampType m_Camp;
-        private readonly int m_HP;
+        private readonly float m_HP;
        
-        private readonly int m_Defense;
+        private readonly float m_Defense;
 
-        public BattleData(CampType camp, int hp, int defense)
+        public BattleData(CampType camp, float hp, float defense)
         {
             m_Camp = camp;
             m_HP = hp;
@@ -34,7 +34,7 @@ namespace GameMain
             }
         }
 
-        public int HP
+        public float HP
         {
             get
             {
@@ -44,7 +44,7 @@ namespace GameMain
 
        
 
-        public int Defense
+        public float Defense
         {
             get
             {

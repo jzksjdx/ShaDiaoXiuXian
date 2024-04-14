@@ -209,7 +209,7 @@ namespace GameMain
             }
             
 
-            int attack = weapon.m_WeaponData.Attack;
+            float attack = weapon.m_WeaponData.Attack;
             BattleData attackerBattleData = attacker.GetImpactData();
             BattleData victimBattleData = victim.GetImpactData();
             if (GetRelation(attackerBattleData.Camp, victimBattleData.Camp) == RelationType.Friendly)
@@ -218,7 +218,7 @@ namespace GameMain
             }
 
            
-            int targetDamageHP = CalcDamageHP(attack, victimBattleData.Defense);
+            float targetDamageHP = CalcDamageHP(attack, victimBattleData.Defense);
 
            
 
@@ -242,7 +242,7 @@ namespace GameMain
             
             
             
-            int damageHp = CalcDamageHP(weapon.m_WeaponData.Attack, victimBattleData.Defense);
+            float damageHp = CalcDamageHP(weapon.m_WeaponData.Attack, victimBattleData.Defense);
             
             
             victim.ApplyDamage(bulletOwner,damageHp);
@@ -366,7 +366,7 @@ namespace GameMain
             }
         }
 
-        private static int CalcDamageHP(int attack, int defense)
+        private static float CalcDamageHP(float attack, float defense)
         {
             if (attack <= 0)
             {

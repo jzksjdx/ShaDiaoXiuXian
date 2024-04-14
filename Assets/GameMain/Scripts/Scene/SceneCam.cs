@@ -15,13 +15,15 @@ public class SceneCam : Entity
    {
       base.OnInit(userData);
       cinemachine = GetComponentInChildren<CinemachineVirtualCamera>();
-      cinemachineTargetGroup = GetComponentInChildren<CinemachineTargetGroup>();
+       // 暂时不加追踪任何target
+      //cinemachineTargetGroup = GetComponentInChildren<CinemachineTargetGroup>();
       //cinemachine.LookAt = cinemachineTargetGroup.Transform;
    }
 
    public void SetFollow(Transform target)
    {
-      cinemachine.Follow = target;
+        // 暂时不加追踪任何target
+        //cinemachine.Follow = target;
    }
 
 

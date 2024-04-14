@@ -180,7 +180,7 @@ namespace GameMain
             //}
             
         }
-        public void Update(float elapseSeconds, float realElapseSeconds)
+        public virtual void Update(float elapseSeconds, float realElapseSeconds)
         {
             if(GameOver || GameWin)
                 return;
@@ -198,22 +198,22 @@ namespace GameMain
                 
             }
 
-            if (ne.EntityLogicType == typeof(SceneCam) )
-            {
-                SceneCam = ne.Entity.Logic as SceneCam;
-                var playerCamInfo = Player.GetComponent<PlayerCamFollowAndLookTransforms>();
-                if (playerCamInfo)
-                {
-                    SceneCam.SetFollow(playerCamInfo.follow);
-                    SceneCam.AddToTargetGroup(playerCamInfo.lookAt);
-                }
-                else
-                {
-                    SceneCam.SetFollow(Player.transform);
-                    SceneCam.AddToTargetGroup(Player.transform);
-                }
+            //if (ne.EntityLogicType == typeof(SceneCam) )
+            //{
+            //    SceneCam = ne.Entity.Logic as SceneCam;
+            //    var playerCamInfo = Player.GetComponent<PlayerCamFollowAndLookTransforms>();
+            //    if (playerCamInfo)
+            //    {
+            //        SceneCam.SetFollow(playerCamInfo.follow);
+            //        SceneCam.AddToTargetGroup(playerCamInfo.lookAt);
+            //    }
+            //    else
+            //    {
+            //        SceneCam.SetFollow(Player.transform);
+            //        SceneCam.AddToTargetGroup(Player.transform);
+            //    }
                 
-            }
+            //}
         }
 
         protected virtual void OnShowEntityFailure(object sender, GameEventArgs e)

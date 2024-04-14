@@ -14,6 +14,9 @@ namespace GameMain
         /// </summary>
         public static class AssetPriority
         {
+            // 沙雕修仙游戏
+            public const int EnemyAsset = 80;
+            // MMTM框架自带
             public const int ConfigAsset = 100;
             public const int DataTableAsset = 100;
             public const int DictionaryAsset = 100;

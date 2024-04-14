@@ -59,7 +59,7 @@ public class Player : BattleUnit
         }
     }
 
-    public override void ApplyDamage(BattleUnit attacker, int damageHP)
+    public override void ApplyDamage(BattleUnit attacker, float damageHP)
     {
         base.ApplyDamage(attacker, damageHP);
         GameEntry.CameraShake.ShakeCamera(0.3f,0.5f,0.3f);

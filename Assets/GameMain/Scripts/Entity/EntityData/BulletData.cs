@@ -22,7 +22,7 @@ namespace GameMain
         private CampType m_OwnerCamp = CampType.Unknown;
 
         [SerializeField]
-        private int weaponIndex = 0;
+        private int m_weaponIndex = 0;
 
         [SerializeField]
         private float m_Speed = 0f;
@@ -48,7 +48,7 @@ namespace GameMain
         {
             m_OwnerId = ownerId;
             m_OwnerCamp = ownerCamp;
-            weaponIndex = weaponIndex;
+            m_weaponIndex = weaponIndex;
             m_Speed = speed;
             this.m_keepTime = keepTime;
             
@@ -97,7 +97,7 @@ namespace GameMain
         {
             get
             {
-                return weaponIndex;
+                return m_weaponIndex;
             }
         }
 

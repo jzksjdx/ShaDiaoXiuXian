@@ -16,7 +16,7 @@ namespace GameMain
     public class WeaponData : AccessoryObjectData
     {
         [SerializeField]
-        private int m_Attack = 0;
+        private float m_Attack = 0;
 
         [SerializeField]
         private float m_AttackInterval = 0f;
@@ -61,7 +61,7 @@ namespace GameMain
         /// <summary>
         /// 攻击力。
         /// </summary>
-        public int Attack
+        public float Attack
         {
             get
             {

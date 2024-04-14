@@ -48,8 +48,13 @@ namespace GameMain
             entityComponent.AttachEntity(entity.Entity, ownerId, parentTransformPath, userData);
         }
 
+        // 沙雕修仙游戏
+        public static void ShowEnemy(this EntityComponent entityComponent, EnemyData data)
+        {
+            entityComponent.ShowEntity(typeof(Enemy), "Enemy", Constant.AssetPriority.EnemyAsset, data);
+        }
        
-
+        // 框架自带
         public static void ShowWeapon(this EntityComponent entityComponent, WeaponData data)
         {
             entityComponent.ShowEntity(typeof(Weapon), "Weapon", Constant.AssetPriority.WeaponAsset, data);
