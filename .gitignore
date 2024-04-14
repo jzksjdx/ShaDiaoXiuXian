@@ -12,7 +12,9 @@ Assets/GameMain/.DS_Store
 /Logs/
 /Packages
 /[Uu]ser[Ss]ettings/
-*LocalPlugins*
+UserSettings
+*LocalPlugins
+*LocalPlugins.meta
 
 .idea/
 *.csproj
