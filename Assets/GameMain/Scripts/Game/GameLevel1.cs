@@ -7,7 +7,7 @@
 
 
 using GameFramework.Event;
-
+using UnityEngine;
 using UnityGameFramework.Runtime;
 
 namespace GameMain
@@ -32,10 +32,14 @@ namespace GameMain
             if (m_ElapseSeconds >= m_EnemyGenerationTime)
             {
                 m_ElapseSeconds = 0f;
+                Vector3 enemyPosition = new Vector3(0, 0, 0);
+                enemyPosition.x = Random.Range(0f, 1f) > 0.5f ? -36.5f : 36.5f;
+                enemyPosition.z = Random.Range(-6.8f, 10.5f);
+
                 GameEntry.Entity.ShowEnemy(new EnemyData(GameEntry.Entity.GenerateSerialId(), 20003)
                 {
-                    Position = new UnityEngine.Vector3(100, 100, 100),
-                });;
+                    Position = enemyPosition
+                });
 
             }
         }
