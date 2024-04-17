@@ -8,7 +8,7 @@ using GameEntry = GameMain.GameEntry;
 
 namespace GameMain
 {
-    public class Enemy : Entity
+    public class Enemy : BattleUnit
     {
         [SerializeField] private EnemyData m_EnemyData = null;
         private Vector3 playerBaseLocation = new Vector3(0, 0, 11f); // 宗门位置

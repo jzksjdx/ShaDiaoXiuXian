@@ -19,7 +19,7 @@ namespace GameMain
     {
         public static readonly string[] DataTableNames = new string[]
         {
-            //"Follower",
+            "Follower",
             "Enemy",
 
             "Armor",

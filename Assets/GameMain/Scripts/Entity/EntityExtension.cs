@@ -49,6 +49,11 @@ namespace GameMain
         }
 
         // 沙雕修仙游戏
+        public static void ShowFollower(this EntityComponent entityComponent, FollowerData data)
+        {
+            entityComponent.ShowEntity(typeof(Follower), "Follower", Constant.AssetPriority.FollowerAsset, data);
+        }
+
         public static void ShowEnemy(this EntityComponent entityComponent, EnemyData data)
         {
             entityComponent.ShowEntity(typeof(Enemy), "Enemy", Constant.AssetPriority.EnemyAsset, data);

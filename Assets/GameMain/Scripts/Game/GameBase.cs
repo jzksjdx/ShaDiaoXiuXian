@@ -78,14 +78,14 @@ namespace GameMain
                     spawnedPlayer = true;
             }
             
-            
+            // 沙雕修仙暂时不生成玩家
 
             //如果没有生成玩家
-            if (!spawnedPlayer)
-            {
-                Log.Error("没有生成玩家，系统自动生成玩家在0坐标，要让玩家生成在指定位置请拖拽玩家预制体到场景中并添加EntityInfo组件");
-                GameEntry.Entity.ShowPlayer(new PlayerData(GameEntry.Entity.GenerateSerialId(),10000));
-            }
+            //if (!spawnedPlayer)
+            //{
+            //    Log.Error("没有生成玩家，系统自动生成玩家在0坐标，要让玩家生成在指定位置请拖拽玩家预制体到场景中并添加EntityInfo组件");
+            //    GameEntry.Entity.ShowPlayer(new PlayerData(GameEntry.Entity.GenerateSerialId(),10000));
+            //}
 
             GameEntry.Entity.ShowSceneCam();
             #endregion
@@ -101,6 +101,17 @@ namespace GameMain
             //定时器例子
             GameEntry.Timer.AddOnceTimer(3,()=>{Debug.Log("3秒Timer定时器");});
             GameEntry.TimingWheel.AddTask(3000,(success)=>{Debug.Log("3秒TimingWheel定时器");});
+
+
+            // 测试代码 要删除
+            Vector3 followerPosition = new Vector3(0, 0, 0);
+            followerPosition.x = UnityEngine.Random.Range(-7f, 7f);
+            followerPosition.z = UnityEngine.Random.Range(-6f, 6f);
+
+            GameEntry.Entity.ShowFollower(new FollowerData(GameEntry.Entity.GenerateSerialId(), 20003)
+            {
+                Position = followerPosition
+            });
         }
         
         

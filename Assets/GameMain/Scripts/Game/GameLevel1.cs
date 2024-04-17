@@ -15,8 +15,12 @@ namespace GameMain
 
     public class GameLevel1 : GameBase
     {
-        private float m_ElapseSeconds = 0f;
-        private float m_EnemyGenerationTime = 5f;
+        private float m_EnemyTimer = 0f;
+        private float m_EnemySpawnTime = 5f; // 敌人生成时间
+
+        private float m_FollowerTimer = 0f;
+        private float m_FollowerSpawnTime = 5f; // 弟子生成时间
+
 
         public override void Update(float elapseSeconds, float realElapseSeconds)
         {
@@ -27,16 +31,43 @@ namespace GameMain
             CheckGameOverOrWin();
 
             // GameLevel1
+            // 生成弟子
+            HandleFollowerSpawn(elapseSeconds);
+
             // 定时生成敌人
-            m_ElapseSeconds += elapseSeconds;
-            if (m_ElapseSeconds >= m_EnemyGenerationTime)
+            HandleEnemySpawn(elapseSeconds);
+        }
+
+        private void HandleFollowerSpawn(float elapseSeconds)
+        {
+            m_FollowerTimer += elapseSeconds;
+            if (m_FollowerTimer >= m_FollowerSpawnTime)
             {
-                m_ElapseSeconds = 0f;
+                m_FollowerTimer = 0f;
+                // 生成在宗门附近
+                Vector3 followerPosition = new Vector3(0, 0, 0);
+                followerPosition.x = Random.Range(-7f, 7f);
+                followerPosition.z = Random.Range(-6f, 6f);
+
+                GameEntry.Entity.ShowFollower(new FollowerData(GameEntry.Entity.GenerateSerialId(), 20003)
+                {
+                    Position = followerPosition
+                });
+
+            }
+        }
+
+        private void HandleEnemySpawn(float elapseSeconds)
+        {
+            m_EnemyTimer += elapseSeconds;
+            if (m_EnemyTimer >= m_EnemySpawnTime)
+            {
+                m_EnemyTimer = 0f;
                 Vector3 enemyPosition = new Vector3(0, 0, 0);
                 enemyPosition.x = Random.Range(0f, 1f) > 0.5f ? -36.5f : 36.5f;
                 enemyPosition.z = Random.Range(-6.8f, 10.5f);
 
-                GameEntry.Entity.ShowEnemy(new EnemyData(GameEntry.Entity.GenerateSerialId(), 20003)
+                GameEntry.Entity.ShowEnemy(new EnemyData(GameEntry.Entity.GenerateSerialId(), 20004)
                 {
                     Position = enemyPosition
                 });
@@ -44,8 +75,6 @@ namespace GameMain
             }
         }
 
-
-
-
+        
     }
 }

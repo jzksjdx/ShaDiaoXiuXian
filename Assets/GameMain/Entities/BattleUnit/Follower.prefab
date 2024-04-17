@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6110061778797765280}
   - component: {fileID: 5866414773124997882}
   m_Layer: 0
-  m_Name: EnemyText
+  m_Name: FollowerText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,7 +83,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032887029201309124}
-  m_Text: "\u654C\u4EBA"
+  m_Text: "\u5F1F\u5B50"
   m_OffsetZ: 0
   m_CharacterSize: 0.22
   m_LineSpacing: 1
@@ -96,7 +96,7 @@ TextMesh:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
     serializedVersion: 2
-    rgba: 4278190335
+    rgba: 4278255374
 --- !u!1 &2718737940613870110
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,10 +191,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3720313423015335125}
-  - component: {fileID: 7220412691708411925}
-  - component: {fileID: 4369906260976085820}
+  - component: {fileID: 5648134728920401649}
+  - component: {fileID: 2576490030097142581}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Follower
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -216,7 +216,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &7220412691708411925
+--- !u!65 &5648134728920401649
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -229,7 +229,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.93, z: 1}
   m_Center: {x: 0, y: 1.01, z: 0}
---- !u!54 &4369906260976085820
+--- !u!54 &2576490030097142581
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
