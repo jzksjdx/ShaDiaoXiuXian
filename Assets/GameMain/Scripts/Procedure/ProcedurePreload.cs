@@ -19,11 +19,11 @@ namespace GameMain
     {
         public static readonly string[] DataTableNames = new string[]
         {
+            "Item",
             "Follower",
             "Enemy",
 
             "Armor",
-            
             "Entity",
             "Music",
             "Scene",
@@ -39,6 +39,9 @@ namespace GameMain
             "AI",
             "BulletImpactSound",
             "BulletImpactEffect",
+
+            // 沙雕修仙技能
+            "SkillSword",
         };
 
         private Dictionary<string, bool> m_LoadedFlag = new Dictionary<string, bool>();

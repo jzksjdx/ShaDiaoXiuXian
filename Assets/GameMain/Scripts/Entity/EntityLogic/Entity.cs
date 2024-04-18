@@ -79,7 +79,7 @@ namespace GameMain
            
             CachedTransform.localPosition = m_EntityData.Position;
             CachedTransform.localRotation = m_EntityData.Rotation;
-            CachedTransform.localScale = Vector3.one;
+            //CachedTransform.localScale = Vector3.one;
             
             //在这里加载状态机
             if (m_EntityData.AIData != null)

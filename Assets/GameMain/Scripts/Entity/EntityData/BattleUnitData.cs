@@ -51,15 +51,13 @@ public class BattleUnitData : TargetableObjectData
 
     public BattleUnitData(int entityId, int typeId, CampType camp) : base(entityId, typeId, camp)
     {
-        
-        
         IDataTable<DRBattleUnit> dtBattleUnits = GameEntry.DataTable.GetDataTable<DRBattleUnit>();
         DRBattleUnit drBattleUnit = dtBattleUnits.GetDataRow(TypeId);
         if (drBattleUnit == null)
         {
             return;
         }
-
+        
         weaponPath0 = drBattleUnit.WeaponPath0;
         weaponPath1 = drBattleUnit.WeaponPath1;
         weaponPath2 = drBattleUnit.WeaponPath2;
@@ -137,7 +135,6 @@ public class BattleUnitData : TargetableObjectData
         {
             return;
         }
-
         m_WeaponDatas.Add(weaponData);
     }
 

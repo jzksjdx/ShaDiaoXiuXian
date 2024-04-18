@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2024-04-18 00:28:17.985
+// 生成时间：2024-04-18 00:28:17.972
 //------------------------------------------------------------
 
 using GameFramework;
@@ -19,14 +19,14 @@ using UnityGameFramework.Runtime;
 namespace GameMain
 {
     /// <summary>
-    /// 武器表。
+    /// 野外随机搜寻到的物资。
     /// </summary>
-    public class DRWeapon : DataRowBase
+    public class DRItem : DataRowBase
     {
         private int m_Id = 0;
 
         /// <summary>
-        /// 获取武器编号。
+        /// 获取技能Id。
         /// </summary>
         public override int Id
         {
@@ -37,63 +37,36 @@ namespace GameMain
         }
 
         /// <summary>
-        /// 获取攻击力。
+        /// 获取资源名称。
         /// </summary>
-        public int Attack
+        public string AssetName
         {
             get;
             private set;
         }
 
         /// <summary>
-        /// 获取攻击间隔。
+        /// 获取获得概率。
         /// </summary>
-        public float AttackInterval
+        public float Chance
         {
             get;
             private set;
         }
 
         /// <summary>
-        /// 获取子弹编号。
+        /// 获取最低等级。
         /// </summary>
-        public int BulletId
+        public int MinLevel
         {
             get;
             private set;
         }
 
         /// <summary>
-        /// 获取子弹速度或者初始力。
+        /// 获取是否重复获得, 默认重复。
         /// </summary>
-        public float BulletSpeed
-        {
-            get;
-            private set;
-        }
-
-        /// <summary>
-        /// 获取开火音效。
-        /// </summary>
-        public int ShootSoundId
-        {
-            get;
-            private set;
-        }
-
-        /// <summary>
-        /// 获取攻击模板。
-        /// </summary>
-        public string AttackLogicComponent
-        {
-            get;
-            private set;
-        }
-
-        /// <summary>
-        /// 获取发射子弹的Transform，仅远程武器使用,近战武器也可以设置，用于特殊情况转为远程武器。
-        /// </summary>
-        public string ShootPoint
+        public bool CanRepeat
         {
             get;
             private set;
@@ -111,13 +84,12 @@ namespace GameMain
             index++;
             m_Id = int.Parse(columnStrings[index++]);
             index++;
-            Attack = int.Parse(columnStrings[index++]);
-            AttackInterval = float.Parse(columnStrings[index++]);
-            BulletId = int.Parse(columnStrings[index++]);
-            BulletSpeed = float.Parse(columnStrings[index++]);
-            ShootSoundId = int.Parse(columnStrings[index++]);
-            AttackLogicComponent = columnStrings[index++];
-            ShootPoint = columnStrings[index++];
+            AssetName = columnStrings[index++];
+            Chance = float.Parse(columnStrings[index++]);
+            index++;
+            MinLevel = int.Parse(columnStrings[index++]);
+            CanRepeat = bool.Parse(columnStrings[index++]);
+            index++;
 
             GeneratePropertyArray();
             return true;
@@ -130,13 +102,10 @@ namespace GameMain
                 using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
                 {
                     m_Id = binaryReader.Read7BitEncodedInt32();
-                    Attack = binaryReader.Read7BitEncodedInt32();
-                    AttackInterval = binaryReader.ReadSingle();
-                    BulletId = binaryReader.Read7BitEncodedInt32();
-                    BulletSpeed = binaryReader.ReadSingle();
-                    ShootSoundId = binaryReader.Read7BitEncodedInt32();
-                    AttackLogicComponent = binaryReader.ReadString();
-                    ShootPoint = binaryReader.ReadString();
+                    AssetName = binaryReader.ReadString();
+                    Chance = binaryReader.ReadSingle();
+                    MinLevel = binaryReader.Read7BitEncodedInt32();
+                    CanRepeat = binaryReader.ReadBoolean();
                 }
             }
 

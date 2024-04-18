@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2024-04-18 00:28:17.977
+// 生成时间：2024-04-18 00:28:17.991
 //------------------------------------------------------------
 
 using GameFramework;
@@ -19,9 +19,9 @@ using UnityGameFramework.Runtime;
 namespace GameMain
 {
     /// <summary>
-    /// 等级属性。
+    /// 飞剑术Skill_Sword。
     /// </summary>
-    public class DRFollower : DataRowBase
+    public class DRSkillSword : DataRowBase
     {
         private int m_Id = 0;
 
@@ -37,9 +37,18 @@ namespace GameMain
         }
 
         /// <summary>
-        /// 获取攻击力。
+        /// 获取CD。
         /// </summary>
-        public float Attack
+        public float Cd
+        {
+            get;
+            private set;
+        }
+
+        /// <summary>
+        /// 获取附加攻击力。
+        /// </summary>
+        public float AtkAttribute
         {
             get;
             private set;
@@ -55,25 +64,7 @@ namespace GameMain
         }
 
         /// <summary>
-        /// 获取速度/s。
-        /// </summary>
-        public float Speed
-        {
-            get;
-            private set;
-        }
-
-        /// <summary>
-        /// 获取最大血量。
-        /// </summary>
-        public float MaxHealth
-        {
-            get;
-            private set;
-        }
-
-        /// <summary>
-        /// 获取血量回复速度/s。
+        /// 获取回复血量。
         /// </summary>
         public float HealthRegen
         {
@@ -82,16 +73,7 @@ namespace GameMain
         }
 
         /// <summary>
-        /// 获取最大法力值。
-        /// </summary>
-        public float MaxMana
-        {
-            get;
-            private set;
-        }
-
-        /// <summary>
-        /// 获取法力回复速度/s。
+        /// 获取回复精神。
         /// </summary>
         public float ManaRegen
         {
@@ -103,6 +85,69 @@ namespace GameMain
         /// 获取进阶需要的灵石。
         /// </summary>
         public int UpgradeCost
+        {
+            get;
+            private set;
+        }
+
+        /// <summary>
+        /// 获取附加的速度。
+        /// </summary>
+        public float SpdAttribute
+        {
+            get;
+            private set;
+        }
+
+        /// <summary>
+        /// 获取消耗的法力。
+        /// </summary>
+        public float ManaCost
+        {
+            get;
+            private set;
+        }
+
+        /// <summary>
+        /// 获取飞行速度。
+        /// </summary>
+        public float Speed
+        {
+            get;
+            private set;
+        }
+
+        /// <summary>
+        /// 获取数量。
+        /// </summary>
+        public int Amount
+        {
+            get;
+            private set;
+        }
+
+        /// <summary>
+        /// 获取范围。
+        /// </summary>
+        public float Range
+        {
+            get;
+            private set;
+        }
+
+        /// <summary>
+        /// 获取时间。
+        /// </summary>
+        public float Duration
+        {
+            get;
+            private set;
+        }
+
+        /// <summary>
+        /// 获取需要人数。
+        /// </summary>
+        public int MinPeople
         {
             get;
             private set;
@@ -120,14 +165,20 @@ namespace GameMain
             index++;
             m_Id = int.Parse(columnStrings[index++]);
             index++;
-            Attack = float.Parse(columnStrings[index++]);
+            Cd = float.Parse(columnStrings[index++]);
+            AtkAttribute = float.Parse(columnStrings[index++]);
             Defense = float.Parse(columnStrings[index++]);
-            Speed = float.Parse(columnStrings[index++]);
-            MaxHealth = float.Parse(columnStrings[index++]);
             HealthRegen = float.Parse(columnStrings[index++]);
-            MaxMana = float.Parse(columnStrings[index++]);
             ManaRegen = float.Parse(columnStrings[index++]);
             UpgradeCost = int.Parse(columnStrings[index++]);
+            SpdAttribute = float.Parse(columnStrings[index++]);
+            ManaCost = float.Parse(columnStrings[index++]);
+            Speed = float.Parse(columnStrings[index++]);
+            index++;
+            Amount = int.Parse(columnStrings[index++]);
+            Range = float.Parse(columnStrings[index++]);
+            Duration = float.Parse(columnStrings[index++]);
+            MinPeople = int.Parse(columnStrings[index++]);
 
             GeneratePropertyArray();
             return true;
@@ -140,14 +191,19 @@ namespace GameMain
                 using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
                 {
                     m_Id = binaryReader.Read7BitEncodedInt32();
-                    Attack = binaryReader.ReadSingle();
+                    Cd = binaryReader.ReadSingle();
+                    AtkAttribute = binaryReader.ReadSingle();
                     Defense = binaryReader.ReadSingle();
-                    Speed = binaryReader.ReadSingle();
-                    MaxHealth = binaryReader.ReadSingle();
                     HealthRegen = binaryReader.ReadSingle();
-                    MaxMana = binaryReader.ReadSingle();
                     ManaRegen = binaryReader.ReadSingle();
                     UpgradeCost = binaryReader.Read7BitEncodedInt32();
+                    SpdAttribute = binaryReader.ReadSingle();
+                    ManaCost = binaryReader.ReadSingle();
+                    Speed = binaryReader.ReadSingle();
+                    Amount = binaryReader.Read7BitEncodedInt32();
+                    Range = binaryReader.ReadSingle();
+                    Duration = binaryReader.ReadSingle();
+                    MinPeople = binaryReader.Read7BitEncodedInt32();
                 }
             }
 

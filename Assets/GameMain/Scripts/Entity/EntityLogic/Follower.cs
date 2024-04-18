@@ -31,6 +31,7 @@ namespace GameMain
 
         protected override void OnShow(object userData)
         {
+            base.OnShow(userData);
             m_FollowerData = userData as FollowerData;
 
             if (m_FollowerData == null)

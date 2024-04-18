@@ -46,7 +46,6 @@ public class BattleUnit : TargetableObject
 #endif
     {
         base.OnShow(userData);
-
         BattleUnitData = userData as BattleUnitData;
         if (BattleUnitData == null)
         {
@@ -56,10 +55,11 @@ public class BattleUnit : TargetableObject
 
         Name = Utility.Text.Format("BattleUnit ({0})", Id);
 
-
+        
         List<WeaponData> weaponDatas = BattleUnitData.GetAllWeaponDatas();
         for (int i = 0; i < weaponDatas.Count; i++)
         {
+            Log.Debug("Show weapon: " + weaponDatas[i].TypeId);
             GameEntry.Entity.ShowWeapon(weaponDatas[i]);
         }
 
@@ -69,7 +69,6 @@ public class BattleUnit : TargetableObject
             GameEntry.Entity.ShowArmor(armorDatas[i]);
         }
 
-        
     }
 
 #if UNITY_2017_3_OR_NEWER
